@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /*ta3mel space mebinet il divet mte3i */
+  align-items: center;
+  height: 56px;
+  padding: 0 16px; /*first value is top&bottom , second value is left&right*/
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer; /*waktli taadi souris ala left section twali cursor kima il yed */
+}
+
+.left-section img {
+  width: 46%;
+  padding-left: 16px;
+}
+
+.mid-section {
+  display: flex;
+  align-items: center;
+  margin-left: -9%;
+}
+
+.mid-section form {
+  display: flex;
+  height: 40px;
+  width: 628px;
+}
+
+.mid-section input {
+  width: 100%; /*tkoun toul ta3 il input fi kobr il form */
+  padding: 12px; /*kelmet search teb3ed ala input */
+  font-size: 1.6rem; /*il font ta3 kelmet search */
+  border: 1px solid #d3d3d3; /*tnahi aka il bordure il kahla w trodha bidha */
+  border-right: none; /*tnahi il bordure ili al right */
+}
+
+.mid-section button {
+  /*ne5dmo fi icon ta3 search */
+  width: 64px;
+  border: 1px solid #d3d3d3;
+  border-radius: 0 2px 2px 0;
+  padding-top: 4px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.mid-section button:hover {
+  /*il icon ta3 search */
+  border-color: #c6c6c6;
+  background-color: #f0f0f0;
+}
+
+.mid-section .mic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center; /* display w justify y center il mic vertically */
+  align-items: center; /*ki nzid il align items y center il mic horizontally */
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.right-section a {
+  padding-right: 18px;
+  text-decoration: none;
+  color: black; /**/
+}
