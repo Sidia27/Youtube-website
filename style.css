@@ -16,7 +16,7 @@ header {
   display: flex;
   justify-content: space-between; /*ta3mel space mebinet il divet mte3i */
   align-items: center;
-  height: 56px;
+  height: 70px;
   padding: 0 16px; /*first value is top&bottom , second value is left&right*/
 }
 
@@ -27,10 +27,20 @@ header {
 }
 
 .left-section img {
-  width: 46%;
-  padding-left: 16px;
+  height: 50px;
+  padding-left: 40px;
 }
 
+.left-section p {
+  font-size: 4em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.left-section span {
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
+}
 .mid-section {
   display: flex;
   align-items: center;
@@ -83,4 +93,56 @@ header {
   padding-right: 18px;
   text-decoration: none;
   color: black; /**/
+}
+
+.content-area {
+  height: calc(
+    100vh - 56px
+  ); /*100vh (toul il keml min fo9 il page hata louta) ki na3mel -56px ya3ni nahi il toul ta3 il header  */
+  display: flex;
+  background-color: #f9f9f9;
+}
+
+aside {
+  height: 100%;
+  width: 280px;
+  background-color: white;
+  overflow-y: auto; /*ki ma3adech terfa3 toul il aside twali ta3mel scroll automatiquement w tal9aha il louta ki scrolli */
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  padding-right: 15px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link span {
+  margin-left: 24px;
+  font-size: 1.4rem;
+  line-height: 2em;
+  font-weight: 400;
+  color: #030303;
+}
+
+.active {
+  background-color: #e5e5e5;
+}
+
+#active-span {
+  font-weight: bold; /*bech ta3mel bold lil home , memchetich b 500 , temchi b 700*/
+}
+
+.inactive:hover {
+  /*hedi ta3 les icons lo5rin be5lef il home */
+  background-color: rgba(0, 0, 0, 0.05); /*na9asna fil loun */
 }
